@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <script src="templates/bootstrap-3.3.2-dist/js/bootstrap.min.js"/>
-        <link href="bootstrap-3.3.2-dist/css/bootstrap.min.css"/>
+        {% load staticfiles %}
+        <script src="{% static 'bootstrap-3.3.2-dist/js/bootstrap.min.js' %}"/>
+        <link href="{% static 'bootstrap-3.3.2-dist/css/bootstrap.min.css'%}"/>
         <!--<link href="bootstrap-3.3.2-dist/css/bootstrap-theme.css"/>-->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,7 +42,7 @@
 
         <div class="container">
 
-            <h1>chunky Bacon</h1>
+            <h1>Chunky Bacon</h1>
             <p>Chunky bacon is the type of bacon that is chunkiest.</p>
 
         </div>
