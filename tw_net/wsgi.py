@@ -12,3 +12,11 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "tw_net.settings")
 
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
+
+
+# For heroku deployment as per https://devcenter.heroku.com/articles/django-assets
+from django.core.wsgi import get_wsgi_application
+from whitenoise.django import DjangoWhiteNoise
+
+application = get_wsgi_application()
+application = DjangoWhiteNoise(application)
