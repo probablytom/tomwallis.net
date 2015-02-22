@@ -24,3 +24,8 @@ body {
     border-right: 1px solid #eee;
     width:15%;
   }
+
+.tw-post-test {
+    color: #77242a;
+    text-align: right;
+}
