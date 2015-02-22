@@ -1,5 +1,6 @@
 Django==1.7.4
 docutils==0.12
+gunicorn==19.2.1
 Markdown==2.6
 textile==2.2.2
 whitenoise==1.0.6
