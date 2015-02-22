@@ -1,1 +1,2 @@
-python manage.py runserver
+web: gunicorn hellodjango.wsgi --log-file -
+
