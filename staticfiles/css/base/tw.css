@@ -29,3 +29,13 @@ body {
     color: #77242a;
     text-align: right;
 }
+
+.tw-project-footer-link {
+    text-color: #e0e0e0;
+}
+
+.invisible {
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
+}
