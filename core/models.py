@@ -5,3 +5,8 @@ from django.db import models
 class Post(models.Model):
     title = models.TextField()
     content = models.TextField()
+
+class Project(models.Model):
+    title = models.TextField()
+    summary = models.TextField()
+    url = models.TextField()

@@ -1,0 +1,41 @@
+body {
+  /*padding-top: 50px;*/
+}
+.starter-template {
+  /*padding: 40px 15px;*/
+    padding-left: 15%;
+}
+
+.tw-heading {
+  text-align: center;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+    width:15%;
+  }
+
+.tw-post-test {
+    color: #77242a;
+    text-align: right;
+}
+
+.tw-project-footer-link {
+    text-color: #e0e0e0;
+}
+
+.invisible {
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
+}
