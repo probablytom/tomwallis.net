@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+{% load staticfiles %}
 <div class="container-fluid tw-content">
     <div class="row">
 
@@ -18,9 +18,8 @@
 
             <!-- Begin about elements -->
 
-            <div class="well well-sm">
-                Email: tom `at` tomwallis.net
-            </div>
+            <div id="about-me-d3"></div>
+            <script type="text/javascript" src="{% static 'about_me_visualise.js' %}"></script>
 
             <!-- End about elements -->
 
