@@ -1,13 +1,13 @@
 body {
   /*padding-top: 50px;*/
 }
-.starter-template {
-  /*padding: 40px 15px;*/
+.tw-content {
+    padding: 40px 15px;
     padding-left: 15%;
 }
 
 .tw-heading {
-  text-align: center;
+    text-align: center;
 }
 
 .sidebar {

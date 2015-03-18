@@ -4,33 +4,39 @@
 {% load markdown_filter %}
 <div class="row">
 
-    <div id="project-container" class="span6 starter-template container">
+    <div id="project-container" class="tw-content container">
         <div class="page-header tw-heading">
-            <h1>Projects</h1>
-            <br>
-            <p>Things I'm working on</p>
+            <h1>Projects
+                <br>
+                <small>Things I'm working on</small>
+            </h1>
         </div>
-        <div id="project-col0" class="span3 col-md-6">
+        <div id="project-col0" class="span3 col-lg-6">
 
         </div>
-        <div id="project-col1" class="span3 col-md-6">
+        <div id="project-col1" class="span3 col-lg-6">
 
         </div>
 
         {% for project in projects %}
 
-        <div id="project-entry-{{project.id}}-contents" class="invisible">
+        <div id="project-entry-placeholder" class="invisible">
             {{ project.summary }}
         </div>
 
         <script type="text/javascript">
             $(document).ready(function () {
                 $("#project-col{% if project.id|divisibleby:'2' %}0{% else %}1{% endif %}").append("<div class='panel panel-default'><div class='panel-heading'> <h3 class='panel-title'>{{ project.title }}</h3> </div> <div class='panel-body' id='project-entry-{{ project.id }}'></div> {% if project.url %} <div class='panel-footer'><a href='{{  project.url }}' class='tw-project-footer-link'>Learn more about {{ project.title }} here!</a></div> {% endif %} </div>");
-                $("#project-entry-{{ project.id }}").html( $("#project-entry-{{ project.id }}" + "-contents").html() ); // This isn't working -- we're not extracting the data correctly!
+                $("#project-entry-{{ project.id }}").html($("#project-entry-placeholder").html());
+                $("#project-entry-placeholder").remove();
             });
         </script>
 
         {% endfor %}
+
+        <script type="text/javascript">
+
+        </script>
 
     </div>
 

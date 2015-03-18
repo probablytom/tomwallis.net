@@ -1,0 +1,49 @@
+{
+
+  "name": "About me",
+  "children": [
+    {
+      "name": "Studies",
+      "children": [
+        {"name": "Glasgow University",
+         "children" : [
+           {
+             "name": "Computer Science"
+           }
+         ]
+        }
+      ]
+    },
+
+    {
+      "name": "Interests",
+      "children": [
+        {"name": "coffee"},
+        {"name": "calligraphy"},
+        {"name": "haskell"},
+        {"name": "category theory"},
+        {"name": "cooking"}
+      ]
+    },
+    {
+      "name": "Skills",
+      "children": [
+
+      ]
+    },
+    {
+      "name": "Projects",
+      "children": [
+
+      ]
+    },
+    {
+      "name": "Email",
+      "children": [
+
+      ]
+    }
+
+  ]
+
+}
